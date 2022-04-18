@@ -55,12 +55,12 @@
 <body bgcolor="SKYBLUE">
     <div id="wrap">
         <header id="header">
-            <h1>고리고리알고리</h1>
-            <select>
-                <option value = '한글' selected>한글</option>
-                <option value = '영어'><a href="#" onclick="location.href='../eng/Main.html'"></a>English</option>
-                <option value = '일본어'>日本語</option>
-                <option value = '중국어'>中文</option>
+            <h1>算法算法运算法则 。</h1>
+            <select id="language" onchange="location.href=this.value">
+                <option value = "../kor/Main.html">한글</option>
+                <option value = "../eng/Main.html">English</option>
+                <option value = "../jp/Main.html">日本語</option>
+                <option value = "../ch/Main.html" selected>中文</option>
             </select>
         </header>
 
@@ -68,12 +68,12 @@
         <nav id="nav">
             <ul>
                 <!-- 버튼 외형은 css로 변경만하면 버튼 종료 -->
-                <button class="favorite styled" type="button"><a href="#" onclick="location.href='bubbleSorting.html'">버블 정렬</a></button>
-                <button class="favorite styled" type="button"><a href="#" onclick="location.href='selectiveSorting.html'">선택 정렬</a></button>
-                <button class="favorite styled" type="button"><a href="#" onclick="location.href='heapSorting.html'">힙 정렬</a></button>
-                <button class="favorite styled" type="button"><a href="#" onclick="location.href='insertionSorting.html'">삽입 정렬</a></button>
-                <button class="favorite styled" type="button">스택</button>
-                <button class="favorite styled" type="button">큐</button>
+                <button class="favorite styled" type="button"><a href="#" onclick="location.href='bubbleSorting.html'">泡沫排列</a></button>
+                <button class="favorite styled" type="button"><a href="#" onclick="location.href='selectiveSorting.html'">选择排序</a></button>
+                <button class="favorite styled" type="button"><a href="#" onclick="location.href='heapSorting.html'">臀部排列</a></button>
+                <button class="favorite styled" type="button"><a href="#" onclick="location.href='insertionSorting.html'">插入排序</a></button>
+                <button class="favorite styled" type="button">堆栈</button>
+                <button class="favorite styled" type="button">提示</button>
             </ul>
         </nav>
 
@@ -91,7 +91,7 @@
                         </a>
                     </div>
                     <div class = "container">
-                        버블 정렬
+                        泡沫排列
                     </div>
                 </article>
             </div>
@@ -108,7 +108,7 @@
                     </a>
                 </div>
                 <div class = "container">
-                    선택 정렬
+                    选择排序
                 </div>
             </aside>
             <div style="clear:both;"></div>
@@ -127,7 +127,7 @@
                         </a>  
                     </div>
                 <div class = "container">
-                    힙 정렬
+                    臀部排列
                 </div>
                 </article>
             </div>
@@ -141,18 +141,18 @@
                     </span>
                     </a>
                     <div class = "container">
-                        삽입 정렬
+                        插入排序
                     </div>
             </aside>
             <div style="clear:both;"></div>
         </section>
 
         <footer id="footer">
-            담당 교수님 : 임선영 교수님<br>
-            제작자 : 박용빈 김준석 안효준<br>
-            꿈 드림 설계 목적 : 알고리즘을 시각적으로 보여주는 웹<br>
-            4월 24일 용빈이 생일<br>
-            4월 24일 안효준 기사 필기시험<br>
+            负责教授:林善英教授<br>
+            制作人:朴容彬 金俊锡 安孝俊<br>
+            梦想设计目的:视觉上显示算法的网页<br>
+            4月24日 容彬生日<br>
+            4月24日安孝俊技师笔试<br>
         </footer>
     </div>
 </body>

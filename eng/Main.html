@@ -56,11 +56,11 @@
     <div id="wrap">
         <header id="header">
             <h1>Gori Gori Algori</h1>
-            <select>
-                <option value = '한글'>한글</option>
-                <option value = '영어' selected>English</option>
-                <option value = '일본어'>日本語</option>
-                <option value = '중국어'>中文</option>
+            <select id="language" onchange="location.href=this.value">
+                <option value = "../kor/Main.html">한글</option>
+                <option value = "../eng/Main.html" selected>English</option>
+                <option value = "../jp/Main.html">日本語</option>
+                <option value = "../ch/Main.html">中文</option>
             </select>
         </header>
 
