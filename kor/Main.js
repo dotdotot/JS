@@ -1,12 +1,12 @@
 // 랜덤값 (정렬 x, 폰트 size 추가 x)
 var notSortArr = [];
-// notSortArr.length = 10;
 // 랜덤값 (정렬 o, 폰트 size 추가 x)
 var sortArr = [9, 8, 7, 6, 5, 4, 3, 2, 1, 10];
 // 랜덤값 (정렬 x, 폰트 size 추가 o)
 var notSortArr_f = [];
 // 랜덤값 (정렬 o, 폰트 size 추가 o)
 var sortArr_f = [];
+
 var pArr = [];
 var str = ["#text1", "#text2", "#text3", "#text4", "#text5", "#text6", "#text7", "#text8", "#text9", "#text10"]
 let index = 0;
@@ -22,6 +22,28 @@ for (var i = 0; i < 8; i++) {
     }
 }
 
+class Font {
+    // 생성자
+    Constructor(num, size) {
+    this.num = num; 
+    this.size = size; } 
+
+    getNum(){
+        return this.num;
+    }
+    getSize(){
+        return this.size;
+    }
+    setNum(){
+        this.num=num;
+    }
+    setSize(){
+        this.size=size;
+    }
+}
+
+let one = new Font(1,20);
+one.getNum()
 function bubbleSort1(array) {
     var length = array.length;
     var i, j, temp;
@@ -47,9 +69,9 @@ function bubbleSort1(array) {
 bubbleSort1([10, 54, 77, 44, 88, 156, 1, 3, 4]);
 
 index = 0;
-for(var i = 0; i <8;i++){
-    for(var ii = 0; ii < 8-i;ii++){
-        pArr[index] = arr[i][ii]; 
+for (var i = 0; i < 8; i++) {
+    for (var ii = 0; ii < 8 - i; ii++) {
+        pArr[index] = arr[i][ii];
         index++;
     }
 }
@@ -71,6 +93,10 @@ $(document).ready(function () {
             // 1 ~ 50 (floor로 소수점 제거)
             notSortArr[i] = Math.floor(Math.random() * 50 + 1);
         }
+        // sortArr_f = notSortArr.sort()
+
+        //
+
         for (var i = 0; i < 10; i++) {
             $(str[i]).html(notSortArr[i] + "  ");
         }
