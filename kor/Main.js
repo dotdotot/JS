@@ -76,10 +76,6 @@ for (var i = 0; i < 8; i++) {
 // notSortArr에 랜덤값 추가 (생성버튼 클릭시 이벤트 발생)
 $(document).ready(function () {
     $("#btn1").click(function () {
-        // for (var i = 0; i < 10; i++) {
-        //     // 1 ~ 50 (floor로 소수점 제거)
-        //     notSortArr[i] = Math.floor(Math.random() * 50 + 1);
-        // }
         // 랜덤 값을 10개 그냥 생성해버리면 에러가 발생해 중복된 랜덤값은 발생하지 않도록 수정
         var i = 0;
         while(true){
@@ -104,7 +100,8 @@ $(document).ready(function () {
                 }
             }
         }
-        console.log(notSortArr);
+
+
 
         for(var i =0; i <10; i++){
             sortArr[i] = notSortArr[i];
@@ -135,17 +132,20 @@ $(document).ready(function () {
         classArr[8] = nine;
         classArr[9] = ten;
 
+
         shuffle(classArr);
         
         console.log(classArr);
         var element = [];
         for(var i = 0; i < 10; i++){
-            element[i] = document.getElementById("text" + (i +1));
+            element[i] = document.getElementById("text" + (i + 1));
         }
+        console.log(element);
         for(var i = 0; i < 10; i++){
-            element[i].innerHTML = classArr[i].num + " ";
+            element[i].innerHTML = classArr[i].num + "  ";
             element[i].id = classArr[i].sizeText;
         }
+        console.log(element);
 
         // var element1 = document.getElementById("text1");
         // var element2 = document.getElementById("text2");
@@ -187,6 +187,10 @@ $(document).ready(function () {
 
         // element10.innerHTML = classArr[9].num + " ";
         // element10.id=classArr[9].sizeText;
+        console.log(classArr);
+
+        target = document.getElementById('btn1');
+        target.disabled = true;
     });
 });
 
