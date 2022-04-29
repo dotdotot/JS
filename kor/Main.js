@@ -137,6 +137,7 @@ $(document).ready(function () {
 
         shuffle(classArr);
         
+        console.log(classArr);
         var element = [];
         for(var i = 0; i < 10; i++){
             element[i] = document.getElementById("text" + (i +1));
