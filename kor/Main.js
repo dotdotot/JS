@@ -137,61 +137,55 @@ $(document).ready(function () {
 
         shuffle(classArr);
         
-        var element1 = document.getElementById("text1");
-        var element2 = document.getElementById("text2");
-        var element3 = document.getElementById("text3");
-        var element4 = document.getElementById("text4");
-        var element5 = document.getElementById("text5");
-        var element6 = document.getElementById("text6");
-        var element7 = document.getElementById("text7");
-        var element8 = document.getElementById("text8");
-        var element9 = document.getElementById("text9");
-        var element10 = document.getElementById("text10");
+        var element = [];
+        for(var i = 0; i < 10; i++){
+            element[i] = document.getElementById("text" + (i +1));
+        }
+        for(var i = 0; i < 10; i++){
+            element[i].innerHTML = classArr[i].num + " ";
+            element[i].id = classArr[i].sizeText;
+        }
 
-        element1.innerHTML = classArr[0].num + " ";
-        element1.id=classArr[0].sizeText;
+        // var element1 = document.getElementById("text1");
+        // var element2 = document.getElementById("text2");
+        // var element3 = document.getElementById("text3");
+        // var element4 = document.getElementById("text4");
+        // var element5 = document.getElementById("text5");
+        // var element6 = document.getElementById("text6");
+        // var element7 = document.getElementById("text7");
+        // var element8 = document.getElementById("text8");
+        // var element9 = document.getElementById("text9");
+        // var element10 = document.getElementById("text10");
 
-        element2.innerHTML = classArr[1].num + " ";
-        element2.id=classArr[1].sizeText;
+        // element1.innerHTML = classArr[0].num + " ";
+        // element1.id=classArr[0].sizeText;
 
-        element3.innerHTML = classArr[2].num + " ";
-        element3.id=classArr[2].sizeText;
+        // element2.innerHTML = classArr[1].num + " ";
+        // element2.id=classArr[1].sizeText;
 
-        element4.innerHTML = classArr[3].num + " ";
-        element4.id=classArr[3].sizeText;
+        // element3.innerHTML = classArr[2].num + " ";
+        // element3.id=classArr[2].sizeText;
 
-        element5.innerHTML = classArr[4].num + " ";
-        element5.id=classArr[4].sizeText;
+        // element4.innerHTML = classArr[3].num + " ";
+        // element4.id=classArr[3].sizeText;
 
-        element6.innerHTML = classArr[5].num + " ";
-        element6.id=classArr[5].sizeText;
+        // element5.innerHTML = classArr[4].num + " ";
+        // element5.id=classArr[4].sizeText;
 
-        element7.innerHTML = classArr[6].num + " ";
-        element7.id=classArr[6].sizeText;
+        // element6.innerHTML = classArr[5].num + " ";
+        // element6.id=classArr[5].sizeText;
 
-        element8.innerHTML = classArr[7].num + " ";
-        element8.id=classArr[7].sizeText;
+        // element7.innerHTML = classArr[6].num + " ";
+        // element7.id=classArr[6].sizeText;
 
-        element9.innerHTML = classArr[8].num + " ";
-        element9.id=classArr[8].sizeText;
+        // element8.innerHTML = classArr[7].num + " ";
+        // element8.id=classArr[7].sizeText;
 
-        element10.innerHTML = classArr[9].num + " ";
-        element10.id=classArr[9].sizeText;
+        // element9.innerHTML = classArr[8].num + " ";
+        // element9.id=classArr[8].sizeText;
 
-        // 작업하다 실패한 코드 (위 코드)
-        // for (var i = 0; i < 10; i++) {
-        //     // $(str[i]).html(classArr[i].num + "  ");
-        //     var element = document.getElementById("text" + (i + 1));
-        //     element.innerHTML = classArr[i].num + " ";
-        //     element.id=classArr[i].sizeText;
-        //     console.log(element)
-        //     // element.setAttribute('id',classArr[i].sizeText);
-        //     // alert(element.innerHTML);
-        //     // console.log(element);
-        //     // element.setAttribute(classArr[i].sizeText);
-        //     // console.log(element);
-        // }
-
+        // element10.innerHTML = classArr[9].num + " ";
+        // element10.id=classArr[9].sizeText;
     });
 });
 
